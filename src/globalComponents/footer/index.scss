@@ -1,0 +1,64 @@
+@use "styles/variables" as vars;
+
+.footer-wrapper {
+  width: 100%;
+  min-height: 370px;
+
+  .top-section {
+    padding-top: 60px;
+    padding-bottom: 90px;
+
+    .top-left-section {
+      > img:first-child {
+        margin-bottom: 16px;
+      }
+      p {
+        margin-bottom: 0;
+        max-width: 300px;
+      }
+
+      .icons-wrapper {
+        display: inline-flex;
+        gap: 16px;
+        margin-top: 36px;
+
+        img {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .links-wrapper {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 24px;
+
+    h5,
+    a,
+    p {
+      color: vars.$footer-link-color;
+      margin: 0;
+    }
+    h5 {
+      font-size: 16px;
+      color: vars.$black;
+    }
+  }
+
+  .bottom-section {
+    height: 62px;
+    background-color: vars.$black;
+    display: flex;
+    align-items: center;
+
+    p {
+      color: vars.$white;
+      margin-bottom: 0;
+    }
+
+    .bottom-section-links {
+      display: inline-flex;
+      gap: 50px;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@use "variables" as vars;
+
+// mixins
+
+@mixin button-variant($type: "", $width: "", $color: "") {
+  @if $type == "primary" {
+    background: vars.$btn-primary-bg;
+    color: vars.$white;
+    &:hover {
+      background: darken(vars.$btn-primary-bg, 10%);
+    }
+  }
+  @if $type == "secondary" {
+    background: vars.$btn-secondary-bg;
+    color: vars.$black;
+    &:hover {
+      background: darken(vars.$btn-secondary-bg, 10%);
+    }
+  }
+  @if $type == "colored" {
+    background: $color;
+    &:hover {
+      background: darken($color, 10%);
+    }
+  }
+  height: 48px;
+  border: 0;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 0 20px;
+  transition: 0.2s ease-in-out;
+  transition-property: color, background-color, border;
+
+  @if $width == "full" {
+    width: 100%;
+  }
+}

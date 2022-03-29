@@ -1,0 +1,22 @@
+@use "styles/variables" as vars;
+.staff-page-wrapper {
+  .card-view {
+    padding: vars.$card-padding-2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .filters-wrapper,
+  .actions-wrapper {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .filters-wrapper {
+    gap: 18px;
+  }
+  .actions-wrapper {
+    gap: 10px;
+  }
+}

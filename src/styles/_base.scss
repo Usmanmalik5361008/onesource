@@ -1,0 +1,123 @@
+@use "variables.scss" as vars;
+
+//font faces
+
+@font-face {
+  font-family: "Inter-Regular";
+  src: url("../assets/fonts/Inter/static/Inter-Regular.ttf");
+}
+@font-face {
+  font-family: "Inter-Medium";
+  src: url("../assets/fonts/Inter/static/Inter-Medium.ttf");
+}
+@font-face {
+  font-family: "Inter-Bold";
+  src: url("../assets/fonts/Inter/static/Inter-Bold.ttf");
+}
+
+//root
+
+:root {
+  --font-primary: "Inter-Regular";
+  // text colors
+  --color-text: vars.$dark-grey;
+  --color-text-heading: vars.$black;
+}
+
+// resets
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-primary);
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+form legend {
+  color: var(--color-text-heading);
+  margin-bottom: 8px;
+}
+
+/* text size */
+
+.text-xxxl {
+  font-size: vars.$text-xxxl;
+}
+
+p {
+  font-size: vars.$text-xs;
+  font-family: "Inter-Regular";
+  color: var(--color-text);
+}
+
+h1,
+.text-xxl {
+  font-size: vars.$text-xxl;
+  font-family: "Inter-Bold";
+}
+
+h2,
+.text-xl {
+  font-size: vars.$text-xl;
+  font-family: "Inter-Bold";
+}
+
+h3,
+.text-lg {
+  font-size: vars.$text-lg;
+  font-family: "Inter-Bold";
+}
+
+h4,
+.text-md {
+  font-size: vars.$text-md;
+}
+h5,
+.text-mormal {
+  font-size: vars.$text-nm;
+}
+
+.text-sm,
+small {
+  font-size: vars.$text-sm;
+}
+
+.text-xs {
+  font-size: vars.$text-xs;
+}
+
+// utils
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// font utills
+
+.inter-medium {
+  font-family: "Inter-Medium";
+}
+
+// text utils
+
+.primary-text {
+  color: vars.$primary-color;
+}
+

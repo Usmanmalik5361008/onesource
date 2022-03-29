@@ -1,0 +1,43 @@
+@use "styles/variables" as vars;
+
+.employee-page-wrapper {
+  .card-view {
+    padding: vars.$card-padding-1;
+
+    h5 {
+      margin-top: 20px;
+      margin-bottom: 15px;
+    }
+  }
+
+  .upload-image-wrapper {
+    border-radius: 4px;
+    background-color: vars.$bg-medium-grey;
+    height: 115px;
+    padding: 24px;
+    display: flex;
+    gap: 18px;
+    align-items: center;
+
+    h5,
+    p {
+      margin: 0;
+    }
+
+    .placeholder-wrapper {
+      height: 67px;
+      width: 67px;
+      border-radius: 50%;
+      background-color: rgba($color: vars.$dark-grey, $alpha: 0.13);
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .card-footer {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 22px;
+    margin-top: 54px;
+  }
+}

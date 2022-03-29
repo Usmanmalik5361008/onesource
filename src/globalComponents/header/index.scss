@@ -1,0 +1,23 @@
+@use "styles/variables" as vars;
+
+.header-wrapper {
+  background-color: vars.$white !important;
+  padding: 0 41px !important;
+  display: flex;
+  justify-content: space-between;
+
+  .actions-wrapper {
+    display: inline-flex;
+    gap: 20px;
+    align-items: center;
+
+    .avatar-with-name {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      p {
+        margin: 0;
+      }
+    }
+  }
+}

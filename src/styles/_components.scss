@@ -1,0 +1,92 @@
+@use "variables" as vars;
+@import "mixins.scss";
+
+// button variants
+
+.btn-primary {
+  @include button-variant($type: "primary");
+}
+.btn-primary-full-width {
+  @include button-variant($type: "primary", $width: "full");
+}
+.btn-secondary {
+  @include button-variant($type: "secondary");
+}
+.btn-secondary-full-width {
+  @include button-variant($type: "secondary", $width: "full");
+}
+
+.btn-colored-aquablue {
+  @include button-variant($type: "colored", $color: vars.$btn-aquablue-bg);
+}
+.btn-colored-orange {
+  @include button-variant($type: "colored", $color: vars.$btn-orange-bg);
+}
+
+// sizes
+
+// custom card
+
+.card-view {
+  border-radius: 4px;
+  background: vars.$white;
+}
+
+// custom form field
+
+.custom-form-field {
+  .prepend-icon {
+    position: absolute;
+    left: 15px;
+    top: 18px;
+    width: 14px;
+    height: 14px;
+  }
+
+  .prepend-icon + input {
+    padding-left: 40px;
+  }
+
+  label {
+    font-size: vars.$text-xs;
+    color: vars.$black;
+    display: block;
+    margin-bottom: 5px;
+  }
+  input,
+  select {
+    outline: none;
+    height: 48px;
+    width: 100%;
+    color: vars.$input-text-color;
+    border: 1px solid vars.$input-border-color;
+
+    &::placeholder {
+      color: vars.$input-placeholder-color;
+      font-size: vars.$text-xs;
+    }
+  }
+
+  input {
+    padding: 0 10px;
+  }
+
+  select {
+    background: url("data:image/svg+xml,<svg height='10px' width='10px' viewBox='0 0 16 16' fill='%23000000' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>")
+      no-repeat;
+    background-position: calc(100% - 0.75rem) center !important;
+    -moz-appearance: none !important;
+    -webkit-appearance: none !important;
+    appearance: none !important;
+  }
+}
+
+// custom table
+
+.custom-table {
+  thead[class*="ant-table-thead"] {
+    th {
+      background-color: transparent;
+    }
+  }
+}
