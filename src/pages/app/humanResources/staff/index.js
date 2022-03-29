@@ -46,7 +46,11 @@ const Staff = () => {
     <div className="staff-page-wrapper">
       <div className="card-view">
         <div className="filters-wrapper">
-          <FormField prependIcon={SEARCH_ICON} style={fieldStyle} />
+          <FormField
+            prependIcon={SEARCH_ICON}
+            style={fieldStyle}
+            placeholder="Search"
+          />
           <FormField as="select" style={fieldStyle} />
           <FormField as="select" style={fieldStyle} />
         </div>

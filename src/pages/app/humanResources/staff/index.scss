@@ -5,12 +5,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
   }
 
   .filters-wrapper,
   .actions-wrapper {
     display: inline-flex;
     align-items: center;
+    flex-wrap: wrap;
   }
 
   .filters-wrapper {

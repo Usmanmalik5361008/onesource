@@ -20,7 +20,9 @@ const FormField = ({
         </select>
       ) : (
         <div className="position-relative">
-          {prependIcon ? <img src={prependIcon} alt="" className="prepend-icon" /> : null}
+          {prependIcon ? (
+            <img src={prependIcon} alt="" className="prepend-icon" />
+          ) : null}
           <input {...rest} />
         </div>
       )}
