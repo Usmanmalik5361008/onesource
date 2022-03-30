@@ -86,10 +86,12 @@ h3,
 h4,
 .text-md {
   font-size: vars.$text-md;
+  font-family: "Inter-Bold";
 }
 h5,
 .text-mormal {
   font-size: vars.$text-nm;
+  font-family: "Inter-Bold";
 }
 
 .text-sm,
@@ -120,4 +122,3 @@ small {
 .primary-text {
   color: vars.$primary-color;
 }
-

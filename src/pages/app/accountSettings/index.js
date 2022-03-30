@@ -2,7 +2,7 @@ import { Tabs } from "antd";
 
 import { loginDetailsIcon, personalInfoIcon } from "assets";
 import React from "react";
-import { AccountInformation } from "./components";
+import { AccountInformation, LoginDetails } from "./components";
 import "./index.scss";
 
 const { TabPane } = Tabs;
@@ -20,7 +20,7 @@ const AccountSettings = () => {
     },
     {
       id: 2,
-      content: <div>Login Details</div>,
+      content: <LoginDetails />,
       tab: (
         <span className="tab-title">
           {loginDetailsIcon} Account Information{" "}

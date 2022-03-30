@@ -1,0 +1,6 @@
+@use "styles/variables" as vars;
+.login-details-section {
+  .card-view {
+    padding: vars.$card-padding-1;
+  }
+}
