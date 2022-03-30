@@ -1,0 +1,54 @@
+@use "styles/variables" as vars;
+
+.accountsetting-page-wrapper {
+  .tab-title {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .ant-tabs-ink-bar {
+    display: none;
+  }
+
+  .ant-tabs-tab {
+    &:hover {
+      color: vars.$btn-aquablue-bg !important;
+
+      .tab-title {
+        color: vars.$btn-aquablue-bg;
+        svg {
+          path {
+            fill: vars.$btn-aquablue-bg;
+          }
+        }
+      }
+    }
+
+    svg {
+      path {
+        fill: #3a3335;
+      }
+    }
+  }
+
+  .ant-tabs-tab.ant-tabs-tab-active {
+    .tab-title {
+      color: vars.$btn-aquablue-bg;
+      svg {
+        path {
+          fill: vars.$btn-aquablue-bg;
+        }
+      }
+    }
+  }
+  .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: vars.$btn-aquablue-bg !important;
+  }
+  .settings-action-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 30px;
+  }
+}

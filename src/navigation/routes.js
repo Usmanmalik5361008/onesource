@@ -1,6 +1,6 @@
 import { AuthLayout, MainLayout } from "layouts";
 
-import { SigninPage, AddEmployee, Staff } from "pages";
+import { SigninPage, AddEmployee, Staff, AccountSettings } from "pages";
 
 const getRoutes = () => {
   return [
@@ -16,7 +16,7 @@ const getRoutes = () => {
     },
     {
       element: <MainLayout />,
-      path: "app",
+      path: "/",
       children: [
         {
           path: "reosurce/staff",
@@ -25,6 +25,10 @@ const getRoutes = () => {
         {
           path: "reosurce/staff/add",
           element: <AddEmployee />,
+        },
+        {
+          path: "settings",
+          element: <AccountSettings />,
         },
       ],
     },

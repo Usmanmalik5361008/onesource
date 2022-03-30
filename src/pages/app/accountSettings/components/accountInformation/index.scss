@@ -1,0 +1,13 @@
+@use "styles/variables" as vars;
+
+.account-info-section {
+  .profile-upload-wrapper {
+    padding: vars.$card-padding-1;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+  }
+  .account-info-form {
+    padding: vars.$card-padding-1;
+  }
+}

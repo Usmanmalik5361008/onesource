@@ -10,7 +10,7 @@ const { Header: AntdHeader } = Layout;
 const Header = () => {
   return (
     <AntdHeader className="header-wrapper" style={{ padding: 0 }}>
-      <h5>Add Employee</h5>
+      <h5>Heading</h5>
       <div className="actions-wrapper">
         {NotificationIcon}
         {MessageIcon}

@@ -19,6 +19,7 @@
   }
   @if $type == "colored" {
     background: $color;
+    color: vars.$white;
     &:hover {
       background: darken($color, 10%);
     }
