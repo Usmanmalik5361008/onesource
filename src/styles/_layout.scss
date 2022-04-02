@@ -29,12 +29,12 @@
     span {
       color: vars.$black;
     }
-    svg {
-      stroke: vars.$dark-grey;
-      path {
-        stroke: vars.$dark-grey;
-      }
-    }
+    // svg {
+    //   stroke: vars.$dark-grey;
+    //   path {
+    //     stroke: vars.$dark-grey;
+    //   }
+    // }
   }
   .ant-menu-item-selected,
   .ant-menu-item-active,
@@ -51,7 +51,9 @@
     svg {
       stroke: vars.$dark-grey;
 
-      path {
+      path,
+      rect,
+      circle {
         stroke: vars.$white;
       }
     }

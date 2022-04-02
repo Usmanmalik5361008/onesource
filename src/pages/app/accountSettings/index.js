@@ -8,27 +8,6 @@ import "./index.scss";
 const { TabPane } = Tabs;
 
 const AccountSettings = () => {
-  const tabs = [
-    {
-      id: 1,
-      content: <AccountInformation />,
-      tab: (
-        <span className="tab-title">
-          {personalInfoIcon} Account Information{" "}
-        </span>
-      ),
-    },
-    {
-      id: 2,
-      content: <LoginDetails />,
-      tab: (
-        <span className="tab-title">
-          {loginDetailsIcon} Account Information{" "}
-        </span>
-      ),
-    },
-  ];
-
   const handleTabChange = (key) => {};
 
   return (
@@ -44,5 +23,22 @@ const AccountSettings = () => {
     </div>
   );
 };
+
+const tabs = [
+  {
+    id: 1,
+    content: <AccountInformation />,
+    tab: (
+      <span className="tab-title">{personalInfoIcon} Account Information </span>
+    ),
+  },
+  {
+    id: 2,
+    content: <LoginDetails />,
+    tab: (
+      <span className="tab-title">{loginDetailsIcon} Account Information </span>
+    ),
+  },
+];
 
 export default AccountSettings;
