@@ -12,7 +12,10 @@ const AddEmployee = () => {
     <div className="employee-page-wrapper">
       <div className="card-view">
         <form>
-          <UploadImageSection onImageSelect={handleImage} />
+          <UploadImageSection
+            onImageSelect={handleImage}
+            placeholder="Upload Employee Image"
+          />
           <h5>Personal Information</h5>
           <Row gutter={[20, 15]}>
             <Col xs={24} sm={12}>

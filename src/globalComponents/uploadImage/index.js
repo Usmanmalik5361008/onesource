@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import { IMAGE_PLACEHOLDER } from "assets";
 
-const UploadImageSection = ({ onImageSelect = null }) => {
+const UploadImageSection = ({ onImageSelect = null, placeholder = "" }) => {
   const [uploadedImageUrl, setUploadedImageUrl] = useState(null);
   const uploadRef = useRef();
 
@@ -29,7 +29,7 @@ const UploadImageSection = ({ onImageSelect = null }) => {
         />
       </div>
       <div>
-        <h5>Upload Employee Image</h5>
+        <h5>{placeholder}</h5>
         <p className="primary-text" onClick={handleBrowseImage}>
           Browse Image
         </p>
