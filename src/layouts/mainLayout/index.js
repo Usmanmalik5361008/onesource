@@ -44,6 +44,7 @@ const MainLayout = () => {
               <SubMenu key={menu.key} title={menu.title} icon={menu.icon}>
                 {menu.subMenu.map((subMenu) => (
                   <Menu.Item
+                    key={subMenu.key}
                     icon={subMenu.icon}
                     onClick={() => handleNavigation(subMenu.href)}
                   >
@@ -138,7 +139,7 @@ const menus = [
         title: "Payroll",
         href: "#",
         icon: "",
-        key: "5-2",
+        key: "5-6",
       },
     ],
   },

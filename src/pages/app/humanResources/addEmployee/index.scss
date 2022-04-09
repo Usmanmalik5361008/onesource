@@ -19,9 +19,15 @@
     gap: 18px;
     align-items: center;
 
+    input {
+      display: none;
+    }
+
     h5,
     p {
       margin: 0;
+      cursor: pointer;
+      user-select: none;
     }
 
     .placeholder-wrapper {
@@ -32,6 +38,13 @@
       display: inline-flex;
       justify-content: center;
       align-items: center;
+
+      .full-image {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border-radius: 50%;
+      }
     }
   }
   .card-footer {

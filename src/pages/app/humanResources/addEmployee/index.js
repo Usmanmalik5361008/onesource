@@ -1,15 +1,18 @@
 import { Col, Row } from "antd";
-import { IMAGE_PLACEHOLDER } from "assets";
-import { Button, FormField } from "globalComponents";
+import { Button, FormField, UploadImageSection } from "globalComponents";
 import React from "react";
 import "./index.scss";
 
 const AddEmployee = () => {
+  const handleImage = (image) => {
+    console.log("image ", image);
+  };
+
   return (
     <div className="employee-page-wrapper">
       <div className="card-view">
         <form>
-          <UploadImageSection />
+          <UploadImageSection onImageSelect={handleImage} />
           <h5>Personal Information</h5>
           <Row gutter={[20, 15]}>
             <Col xs={24} sm={12}>
@@ -55,17 +58,5 @@ const AddEmployee = () => {
     </div>
   );
 };
-
-const UploadImageSection = () => (
-  <div className="upload-image-wrapper">
-    <div className="placeholder-wrapper">
-      <img src={IMAGE_PLACEHOLDER} alt="" />
-    </div>
-    <div>
-      <h5>Upload Employee Image</h5>
-      <p className="primary-text">Browse Image </p>
-    </div>
-  </div>
-);
 
 export default AddEmployee;
